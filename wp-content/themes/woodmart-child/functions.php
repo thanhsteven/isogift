@@ -10,11 +10,12 @@ add_action( 'wp_enqueue_scripts', 'woodmart_child_enqueue_styles', 10010 );
 
 // Mảng chứa danh sách các file bạn muốn include và đường dẫn tương ứng
 $files_to_include = array(
-  'allocationCSS' => '/style/allocation-css.css'
+  'allocationCSS' => '/style/allocation-css.php'
 );
 
 // Đường dẫn đến thư mục của child-theme
 $child_theme_url = get_stylesheet_directory();
+echo $child_theme_url;
 
 // Duyệt qua mảng và include từng file
 foreach ($files_to_include as $file_name => $file_path) {
