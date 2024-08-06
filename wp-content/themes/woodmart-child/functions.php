@@ -10,7 +10,8 @@ add_action( 'wp_enqueue_scripts', 'woodmart_child_enqueue_styles', 10010 );
 
 // Mảng chứa danh sách các file bạn muốn include và đường dẫn tương ứng
 $files_to_include = array(
-  "allocationCSS" => "/style/allocationCSS.php"
+  "allocationCSS" => "/style/allocationCSS.php",
+  "googleTagManager" => "/parts/googleTag.php"
 );
 
 // Duyệt qua mảng và include từng file
