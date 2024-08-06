@@ -87,7 +87,7 @@ define( 'WP_DEBUG', false );
 
 /* That's all, stop editing! Happy publishing. */
 define('WP_AUTO_UPDATE_CORE', false );
-define( 'DISALLOW_FILE_MODS', true );
+define( 'DISALLOW_FILE_MODS', false );
 define( 'AUTOMATIC_UPDATER_DISABLED', true );
 
 
