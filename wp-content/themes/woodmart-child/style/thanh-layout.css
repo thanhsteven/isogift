@@ -4,3 +4,31 @@
   font-weight: 300;
   font-family: inherit;
 }
+.copyrights-wrapper {
+  border-top: 1px solid #fff !important;
+  background-color: var(--wd-primary-color);
+}
+.copyrights-wrapper .min-footer,
+.copyrights-wrapper .min-footer a {
+  color: #fff;
+}
+
+.thanh-footer-categories {
+  border: 1px solid rgb(191 210 215 / 20%) !important;
+  border-radius: var(--wd-brd-radius);
+}
+
+.thanh-footer-categories .widget_nav_mega_menu > .widget-title {
+  padding-block: 12px;
+  padding-inline: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ddd;
+}
+
+.thanh-footer-categories .menu.wd-nav .menu-item > .woodmart-nav-link {
+  font-size: 14px;
+  padding-block: 12px;
+  padding-inline: 16px;
+  border-top: 1px solid rgb(191 210 215 / 20%) !important;
+}
