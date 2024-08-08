@@ -78,11 +78,10 @@ if ( ! function_exists( 'woodmart_shortcode_mega_menu' ) ) {
 		?>
 
 			<div id="<?php echo esc_attr( $widget_id ); ?>" class="widget_nav_mega_menu <?php echo esc_attr( $class ); ?>">
-
 				<?php if ( $atts['title'] ) : ?>
-					<h5 class="widget-title<?php echo esc_attr( $title_classes ); ?>">
+					<p class="widget-title<?php echo esc_attr( $title_classes ); ?>">
 						<?php echo wp_kses( $atts['title'], woodmart_get_allowed_html() ); ?>
-					</h5>
+					</p>
 				<?php endif; ?>
 
 				<?php

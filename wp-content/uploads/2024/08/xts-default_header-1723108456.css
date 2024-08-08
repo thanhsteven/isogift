@@ -1,6 +1,6 @@
 :root{
-	--wd-top-bar-h: 42px;
-	--wd-top-bar-sm-h: 40px;
+	--wd-top-bar-h: 36px;
+	--wd-top-bar-sm-h: 36px;
 	--wd-top-bar-sticky-h: .00001px;
 	--wd-top-bar-brd-w: 1px;
 
@@ -23,11 +23,11 @@
 }
 
 .whb-top-bar .wd-dropdown {
-	margin-top: 1px;
+	margin-top: -2px;
 }
 
 .whb-top-bar .wd-dropdown:after {
-	height: 11px;
+	height: 8px;
 }
 
 
