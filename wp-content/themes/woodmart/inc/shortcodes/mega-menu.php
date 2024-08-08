@@ -16,7 +16,6 @@ if ( ! function_exists( 'woodmart_shortcode_mega_menu' ) ) {
 	function woodmart_shortcode_mega_menu( $atts, $content ) {
 		$output = $title_html = '';
 		$class  = apply_filters( 'vc_shortcodes_css_class', '', '', $atts );
-
 		$atts = shortcode_atts(
 			array(
 				'title'                 => '',
@@ -45,7 +44,6 @@ if ( ! function_exists( 'woodmart_shortcode_mega_menu' ) ) {
 		}
 
 		$widget_id = 'wd-' . $atts['woodmart_css_id'];
-
 		$menu_classes  = ' wd-nav-' . $atts['design'];
 		$menu_classes .= ' wd-style-' . $atts['style'];
 		$menu_classes .= woodmart_get_old_classes( ' ' . $atts['design'] . '-navigation' );
