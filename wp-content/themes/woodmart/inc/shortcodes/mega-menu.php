@@ -36,9 +36,7 @@ if ( ! function_exists( 'woodmart_shortcode_mega_menu' ) ) {
 			),
 			$atts
 		);
-
 		$title_classes = ' color-scheme-' . esc_attr( $atts['woodmart_color_scheme'] );
-
 		if ( function_exists( 'vc_shortcode_custom_css_class' ) ) {
 			$class .= ' ' . vc_shortcode_custom_css_class( $atts['css'] );
 		}
@@ -101,7 +99,6 @@ if ( ! function_exists( 'woodmart_shortcode_mega_menu' ) ) {
 					$atts['css']  = '#' . esc_attr( $widget_id ) . ' .widget-title {';
 					$atts['css'] .= 'background-color: ' . esc_attr( $atts['color'] ) . ';';
 					$atts['css'] .= '}';
-
 					wp_add_inline_style( 'woodmart-inline-css', $atts['css'] );
 				}
 				?>
