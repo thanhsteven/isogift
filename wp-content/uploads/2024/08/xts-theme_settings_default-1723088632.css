@@ -3,6 +3,7 @@
 	font-style: normal;
 	font-family: "woodmart-font";
 	src: url("//isogift.local/wp-content/themes/woodmart/fonts/woodmart-font-1-400.woff2?v=7.5.2") format("woff2");
+	font-display:block;
 }
 
 :root {
