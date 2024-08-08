@@ -12,7 +12,8 @@ add_action( 'wp_enqueue_scripts', 'woodmart_child_enqueue_styles', 10010 );
 $files_to_include = array(
   "allocationCSS"     => "/style/allocationCSS.php",
   "googleTagManager"  => "/parts/googleTag.php",
-  "htmlblock"         => "/parts/thanh-html-block.php"
+  "htmlblock"         => "/parts/thanh-html-block.php",
+  "permalink"         => "/parts/permalink.php"
 );
 
 // Duyệt qua mảng và include từng file
