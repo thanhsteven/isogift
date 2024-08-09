@@ -17,8 +17,11 @@ DELETE pm FROM `wp_postmeta` pm LEFT JOIN wp_posts wp ON wp.ID = pm.post_id WHER
 
 - Vào Public HTML
 - Giữ lại các file: htaccess, robots.txt , wp-config.php
-- Trong đó:
+
+* Trong đó:
+
   - htaccess : liên quan tới bảo mật website
+
   - robots.txt: Chặn công cụ tìm kiếm, chặn index
   - wp-config : Kết nối database
 
