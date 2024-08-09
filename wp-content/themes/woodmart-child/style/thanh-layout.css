@@ -23,7 +23,7 @@
   padding-inline: 16px;
   font-size: 14px;
   font-weight: 700;
-  color: #ddd;
+  color: var(--wd-primary-color);
 }
 
 .thanh-footer-categories .menu.wd-nav .menu-item > .woodmart-nav-link {
