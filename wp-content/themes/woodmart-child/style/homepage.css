@@ -1,13 +1,10 @@
 .home-gioithieu-info-wrapper {
   display: block !important;
 }
-.home-gioithieu-infomation-box {
-  padding: 20px;
+.home-gioithieu-infomation-box .wd-info-box {
+  padding: 10px !important;
 }
 .home-gioithieu-infomation-box .info-box-wrapper .wd-info-box .info-box-icon {
-  background-color: var(--wd-alternative-color);
-  border-radius: 100%;
   width: 90px;
   height: 90px;
-  padding: 10px;
 }
