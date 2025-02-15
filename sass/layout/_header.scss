@@ -1,0 +1,69 @@
+@use "../abstracts" as *;
+.header {
+  &-wrapper {
+    @include flexbox(row, center, space-between, 15px);
+    @include maxWidth($small) {
+      flex-direction: column;
+      margin-inline: -10px;
+      padding-block: 15px;
+    }
+    &-left {
+      max-width: 250px;
+      @include maxWidth($small) {
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
+      }
+    }
+    &-right {
+      border: none;
+      @include maxWidth($small) {
+        @include flexbox(row, center, space-between, 20px);
+        width: 100%;
+        max-height: 50px;
+      }
+    }
+  }
+  &-logo {
+    border-radius: $border12;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  &-hotline {
+    background-color: $primaryColor;
+    border-radius: $border12;
+    @include maxWidth($small) {
+      border-radius: $border4;
+    }
+    &-button {
+      display: block;
+      padding: 15px 20px;
+      @include maxWidth($small) {
+        padding: 10px 15px;
+      }
+      span {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 1.6;
+        @include maxWidth($small) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  &-menu {
+    border: 1px solid #ddd;
+    outline: none;
+    background-color: transparent;
+    border-radius: $border8;
+    @include squareBox(50px);
+    i.fa {
+      font-size: 18px;
+    }
+  }
+}

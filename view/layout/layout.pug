@@ -1,0 +1,15 @@
+doctype html
+html(lang="vi")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    block title 
+    link(rel="shortcut icon", href="../images/logo/isogift-favicon.png", type="image/x-icon")
+    link(rel="stylesheet", href="../vendor/fontawesome/css/font-awesome.min.css")
+    link(rel="stylesheet", href="../style/main.css")
+  body 
+    include ./header/header.pug
+    include ./menu/menu.pug
+    block main 
+    include ./footer/footer.pug
+    script(src="../js/main.js") 

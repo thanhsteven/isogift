@@ -1,0 +1,86 @@
+// * Mixin Flexbox
+@mixin flexbox($direction: row, $align: center, $justify: center, $gap: 0) {
+  & {
+    display: flex;
+  }
+  @if $direction {
+    & {
+      flex-direction: $direction;
+    }
+  }
+  @if $align {
+    & {
+      align-items: $align;
+    }
+  }
+  @if $justify {
+    & {
+      justify-content: $justify;
+    }
+  }
+  @if $gap {
+    & {
+      gap: $gap;
+    }
+  }
+}
+
+// * Khối hình vuông
+@mixin squareBox($width) {
+  & {
+    width: $width;
+    height: $width;
+    line-height: $width;
+  }
+}
+// * Khối Custome
+@mixin shapeBox($width: 0, $height: 0) {
+  & {
+    width: $width;
+    height: $height;
+  }
+}
+
+// * Responsive CSS
+@mixin minWidth($breakpoint: 0) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+@mixin maxWidth($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+@mixin minmax($min: 0, $max: 0) {
+  @media screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+// * Hiện 2 dòng Text
+@mixin webkitBox($row) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $row;
+  overflow: hidden;
+}
+
+// * Hiện thanh scroll ngang trên mobile
+@mixin scrollHorizontalBar() {
+  scroll-snap-type: x mandatory;
+  scroll-snap-stop: always;
+  overflow-x: auto;
+  margin-bottom: 15px;
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #1a2c75;
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #f8f8f8;
+  }
+}

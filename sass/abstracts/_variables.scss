@@ -1,0 +1,30 @@
+// * Size Container
+$container: 1200px;
+$containerFluid: 100%;
+
+// * Responsive CSS
+$extra-large: 1200px;
+$large: 992px;
+$medium: 768px;
+$small: 576px;
+
+// * Color toàn site
+$primaryColor: #1a2c75;
+$secondColor: #b59d78;
+$textColor: #333;
+$borderColor: #666;
+
+// * Border Radius
+$border4: 4px;
+$border6: 6px;
+$border8: 8px;
+$border12: 12px;
+
+// * Shadow Color
+$shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+$shadow2: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+// * Transition
+$transition: opacity 0.5s cubic-bezier(0.2, 1, 0.2, 1),
+  visibility 0.5s cubic-bezier(0.2, 1, 0.2, 1),
+  transform 0.5s cubic-bezier(0.2, 1, 0.2, 1);
